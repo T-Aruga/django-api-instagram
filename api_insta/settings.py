@@ -76,6 +76,14 @@ REST_FRAMEWORK = {
     ],
 }
 
+# Simple JWTの設定
+SIMPLE_JWT = {
+    # トークンをJWTに設定
+    'AUTH_HEADER_TYPES': ('JWT',),
+    # トークンの持続時間の設定
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=180)
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
